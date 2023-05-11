@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3002;
+const PORT = 3002; 
 
 const routeController = require('./controllers/route'); 
 app.use(express.json());
