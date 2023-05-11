@@ -7,15 +7,15 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    response.sendFile(__dirname + '/index.html');
 });
 
 app.use(express.static('public'));
 
 app.get('/about', (req, res) => {
-    res.sendFile(__dirname + '/public/about.html');
+    resonse.sendFile(__dirname + '/public/about.html');
 });
 
 app.get('/contact', (req, res) => {
-    res.sendFile(__dirname + '/public/contact.html');
+    response.sendFile(__dirname + '/public/contact.html');
 });
